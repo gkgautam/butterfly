@@ -1,7 +1,7 @@
 import { React, useState } from 'react'
 import { ProSidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
 import 'react-pro-sidebar/dist/css/styles.css';
-
+import { Link } from 'react-router-dom';
 function Sidebar(props) {
   const [menu, setMenu] = useState(false);
   const updateMenu = () => {
@@ -15,7 +15,7 @@ function Sidebar(props) {
           <MenuItem onClick={updateMenu} icon={<><i class="fa-solid fa-bars"></i></>} >
             Hide Menu
           </MenuItem>
-          <MenuItem icon={<><i class="fa-solid fa-house-chimney"></i></>} >Home</MenuItem>
+          <MenuItem icon={<><i class="fa-solid fa-house-chimney"></i></>} ><Link to="/">Home</Link></MenuItem>
           <SubMenu title="Children" icon={<><i class="fa-solid fa-child-reaching"></i></>}>
             <MenuItem>Add</MenuItem>
             <MenuItem>View</MenuItem>
@@ -24,7 +24,7 @@ function Sidebar(props) {
           </SubMenu>
 
           <SubMenu title="Teachers" icon={<><i class="fa-solid fa-chalkboard-user"></i></>}>
-            <MenuItem>Add</MenuItem>
+          <Link to="/addteacher"><MenuItem>Add</MenuItem></Link>
             <MenuItem>View</MenuItem>
             <MenuItem>Edit/Delete</MenuItem>
             <MenuItem>Report</MenuItem>

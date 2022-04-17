@@ -224,3 +224,10 @@ code {
   .pro-arrow {
   border-color: rgb(87, 87, 87) !important;
 }
+
+.pro-sidebar .pro-menu a{
+  color: rgb(87, 87, 87) !important;
+  &:hover{
+    color: $color-hover !important;
+  }
+}

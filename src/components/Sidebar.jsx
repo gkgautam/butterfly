@@ -17,7 +17,7 @@ function Sidebar(props) {
           </MenuItem>
           <MenuItem icon={<><i class="fa-solid fa-house-chimney"></i></>} ><Link to="/">Home</Link></MenuItem>
           <SubMenu title="Children" icon={<><i class="fa-solid fa-child-reaching"></i></>}>
-            <MenuItem>Add</MenuItem>
+          <Link to="/addchildren"><MenuItem>Add</MenuItem></Link>
             <MenuItem>View</MenuItem>
             <MenuItem>Edit/Delete</MenuItem>
             <MenuItem>Report</MenuItem>

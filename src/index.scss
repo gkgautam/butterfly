@@ -134,6 +134,22 @@ code {
       box-shadow: none;
     }
   }
+  .teacher-head{
+    color:$color-hover;
+    font-weight: 400;
+    
+  }
+  .btn-primary{
+    // margin-right: auto;
+    float: right;
+  }
+  .reqparam{
+    color:red;
+  }
+  .form-control{
+    border: 1.5px solid rgb(188, 188, 188);
+    border-radius: 8px;
+  }
 }
 
 .container-fluid {

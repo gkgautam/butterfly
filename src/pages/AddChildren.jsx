@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Sidebar from '../components/Sidebar'
-function AddTeacher() {
+function AddChildren() {
     const [colum, setColum] = useState('col-3');
     const [colum2, setColum2] = useState('col-9');
     const [newMenu, setNewMenu] = useState(true);
@@ -34,7 +34,7 @@ function AddTeacher() {
 
 
                             <div className='row'>
-                            <h4 className='teacher-head my-3'>Add Teacher</h4>
+                            <h4 className='teacher-head my-3'>Add Children</h4>
                                 <form>
                                     <div class="form-row row">
                                         <div class="col-4 mb-3">
@@ -108,7 +108,7 @@ function AddTeacher() {
                                     </div>
                                    
                                     
-                                    <button class="btn btn-primary mx-2" type="submit">Add Teacher</button>
+                                    <button class="btn btn-primary mx-2" type="submit">Add Children</button>
                                     <button class="btn btn-primary mx-2" type="submit">Cancel</button>
                                 </form>
 
@@ -125,4 +125,4 @@ function AddTeacher() {
     )
 }
 
-export default AddTeacher
+export default AddChildren

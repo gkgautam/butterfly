@@ -140,8 +140,16 @@ code {
     
   }
   .btn-primary{
-    // margin-right: auto;
     float: right;
+    border: 1.5px solid $color-hover;
+    background-color: $color-primary;
+    color: $color-hover;
+    border-radius: 8px;
+    padding: 10px;
+    &:hover{
+      background-color: $color-hover;
+     border: 1.5px solid $color-hover;
+    }
   }
   .reqparam{
     color:red;
